@@ -1148,7 +1148,7 @@ const deployedContracts = {
       },
     },
     PropertyShares: {
-      address: "0x493De1B2028579537C9b563e1457a762D671C5A4",
+      address: "0x3cE0A2b6267dC8487cFC7f8E26896F728F4F7a36",
       abi: [
         {
           inputs: [
@@ -1193,6 +1193,12 @@ const deployedContracts = {
               internalType: "uint256",
               name: "sharePrice",
               type: "uint256",
+            },
+            {
+              indexed: false,
+              internalType: "string",
+              name: "image",
+              type: "string",
             },
           ],
           name: "PropertyCreated",
