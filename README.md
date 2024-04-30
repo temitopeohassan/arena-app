@@ -1,4 +1,5 @@
-# arena-app
+# Arena App
+## Real Estate Tokenization
 
 Arena is a novel entry point into the realm of real estate tokenization, offering a streamlined platform for individuals to tokenize their properties. Arena uses blockchain technology to allow consumers to invest in real estate assets in the same way they would in a Real Estate Investment Trust (REIT), but on a blockchain, assuring transparency and security throughout the investment process.
 
