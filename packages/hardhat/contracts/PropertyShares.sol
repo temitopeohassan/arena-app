@@ -24,8 +24,8 @@ contract PropertyShares {
         nftContract = PropertyNFT(_nftContract);
     }
 
-    event PropertyCreated(address indexed owner, uint256 indexed propertyId, string name, uint256 totalShares, uint256 sharePrice);
-    event ShareBought(address indexed buyer, uint256 indexed propertyId, uint256 shareId, uint256 sharePrice, uint256 newTokenId); // Updated event signature
+    event PropertyCreated(address indexed owner, uint256 indexed propertyId, string name, uint256 totalShares, uint256 sharePrice, string image);
+    event ShareBought(address indexed buyer, uint256 indexed propertyId, uint256 shareId, uint256 sharePrice, uint256 newTokenId); 
 
     struct Share {
         uint256 shareId;
@@ -58,7 +58,7 @@ contract PropertyShares {
         newProperty.totalShares = _totalShares;
         newProperty.sharePrice = _sharePrice;
         newProperty.image = _image;
-        emit PropertyCreated(msg.sender, newProperty.propertyId, _name, _totalShares, _sharePrice);
+        emit PropertyCreated(msg.sender, newProperty.propertyId, _name, _totalShares, _sharePrice, _image);
         numProperties++;
     }
 
